@@ -361,7 +361,15 @@ section.witness {
     padding: 2rem 1.5rem;
   }
 
-  .title{
+  .about,
+  .services,
+  .gallery,
+  .witness,
+  .footer {
+    overflow-x: hidden;
+  }
+
+  .title {
     font-size: 1.5rem;
   }
 
@@ -417,7 +425,7 @@ section.witness {
     margin-bottom: 2rem;
   }
 
-  .about-description h2{
+  .about-description h2 {
     font-size: 1.5rem;
   }
 
@@ -435,6 +443,10 @@ section.witness {
   }
 
   /* Responsive section gallery  */
+  .gallery {
+    padding: 2rem 1.5rem;
+  }
+
   .gallery-content img {
     display: inline-block;
     width: 300px;
@@ -476,38 +488,58 @@ section.witness {
   .footer form {
     width: 100%;
   }
-  
 }
 
 @media screen and (max-width: 778px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
   .logo {
     font-size: 2rem;
   }
 
-  .home-content{
+  .home-content {
     text-align: center;
   }
 
-  .name{
+  .name {
     font-size: 3rem;
+  }
+
+  .gallery-content img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .footer form {
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .contact div {
+    margin: 0.6rem 0.7rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .about-description h2{
+  .about {
+    height: 1230px;
+  }
+
+  .about-description h2 {
     font-size: 1.3rem;
     font-weight: 700;
   }
 
-  .gallery {
-    padding: 2rem 1.5rem;
+  .gallery-content img {
+    width: 150px;
+    height: 200px;
+    margin: 2px;
   }
 
-  .gallery-content img {
-    display: inline-block;
-    width: 200px;
-    height: 300px;
-    margin: 5px;
+  section.witness {
+    height: 620px;
   }
 
   .witness-content article {
@@ -519,10 +551,6 @@ section.witness {
   .service-item {
     margin: 1.5rem 0.5rem;
     width: 350px;
-  }
-
-  section.witness{
-    height: 520px;
   }
 }
 
